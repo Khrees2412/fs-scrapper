@@ -1,0 +1,16 @@
+{
+  "name": "scrapify",
+  "version": "1.0.0",
+  "description": "A program that scrapes files in a given directory and writes it to a new single file ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "scrape",
+    "file",
+    "js scraping"
+  ],
+  "author": "Christian Ndu",
+  "license": "MIT"
+}
