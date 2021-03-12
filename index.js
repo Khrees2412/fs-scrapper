@@ -2,45 +2,48 @@ const path = require("path");
 const fs = require("fs");
 const EventEmitter = require("events");
 
+const args = process.argv.slice(2);
+const directory = args[0];
+const createdDirectory = args[1];
+const fileName = args[2];
+
 class fileEmitter extends EventEmitter {
-  constructor() {
+  constructor(directory) {
     super();
-    this.filePath = "./new/";
+    this.folderPath = `${directory}`;
     this.theContents = [];
-    this.newData = this.theContents.join("");
   }
 
   read() {
     // Read the folder
-    fs.readdir(this.filePath, (_, files) => {
+    fs.readdir(this.folderPath, (_, files) => {
       // Get the files
       files.forEach((file) => {
         // Get the content of the files and push to global array
-        fs.readFile(`${this.filePath}/${file}`, "utf8", (_, contents) => {
+        fs.readFile(`${this.folderPath}/${file}`, "utf8", (_, contents) => {
           this.theContents.push(contents);
         });
       });
-      this.emit("write folder");
+      this.emit("write to file");
     });
   }
-  write() {
+  write(newDir, fileName) {
     // Write contents from global array to new file
-    console.log(this.newData);
     setTimeout(() => {
       fs.writeFile(
-        path.join(__dirname, "fresh", "created.js"),
+        path.join(__dirname, `${newDir}`, `${fileName}`),
         this.theContents.join(""),
         (err) => {
           if (err) console.log(err);
-          console.log("file written...");
+          console.log("file written to...");
         }
       );
     }, 10);
   }
 }
-const logger = new fileEmitter();
+const logger = new fileEmitter(directory);
 logger.read();
 
-logger.on("write folder", () => {
-  logger.write();
+logger.on("write to file", () => {
+  logger.write(createdDirectory, fileName);
 });

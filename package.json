@@ -11,6 +11,7 @@
     "file",
     "js scraping"
   ],
+  "git": "git+https://github.com/khrees2412/scrapify.git",
   "author": "Christian Ndu",
   "license": "MIT"
 }
