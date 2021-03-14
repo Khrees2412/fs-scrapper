@@ -1,8 +1,8 @@
 {
   "name": "fs-scrapper",
   "version": "1.0.0",
-  "description": "A program that scrapes files in a given directory and writes it to a new single file ",
-  "main": "index.js",
+  "description": "A program that scrapes files in a given directory and writes it to a new single file of your choice",
+  "main": "fs-scrapper.js",
   "scripts": {
     "start": "node fs-scrapper"
   },
@@ -11,7 +11,11 @@
     "file",
     "js scraping"
   ],
-  "git": "git+https://github.com/khrees2412/fs-scrapper.git",
-  "author": "Christian Ndu",
+  "homepage": "https://github.com/khrees2412/fs-scrapper.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khrees2412/fs-scrapper.git"
+  },
+  "author": "Christian Ndu <christiannduh@gmail.com>",
   "license": "MIT"
 }
