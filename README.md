@@ -4,7 +4,7 @@ This ~~probably useless~~ piece of code was created as a way for me to understan
 
 I thought someone could benefit from it too.
 
-> Scrapify helps you scrape the content of files in a specified directory and paste it in a 🗁 folder and file of your choice. That's all, its simple and easy. 😃 
+> fs-scrapper helps you scrape the content of files in a specified directory and paste it in a 🗁 folder and file of your choice. That's all, its simple and easy. 😃 
 
 ## How to use - It's really easy!
 
