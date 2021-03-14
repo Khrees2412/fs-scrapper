@@ -41,9 +41,9 @@ class Scrapper extends EventEmitter {
     }, 50);
   }
 }
-const logger = new Scrapper(directory);
-logger.read();
+const scrapper = new Scrapper(directory);
+scrapper.read();
 
-logger.on("write to file", () => {
-  logger.write(createdDirectory, fileName);
+scrapper.on("write to file", () => {
+  scrapper.write(createdDirectory, fileName);
 });

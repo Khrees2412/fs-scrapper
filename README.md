@@ -1,6 +1,6 @@
 # Hi there! 👋
 
-This ~~probably useless~~ piece of code was created as a way for me to understand and also try out the  basics of the Nodejs filesystem. 
+This piece of code was created as a way for me to understand and also try out the  basics of the Nodejs filesystem. 
 
 I thought someone could benefit from it too.
 
