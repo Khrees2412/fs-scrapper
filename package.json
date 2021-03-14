@@ -1,17 +1,17 @@
 {
-  "name": "scrapify",
+  "name": "fs-scrapper",
   "version": "1.0.0",
   "description": "A program that scrapes files in a given directory and writes it to a new single file ",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node fs-scrapper"
   },
   "keywords": [
     "scrape",
     "file",
     "js scraping"
   ],
-  "git": "git+https://github.com/khrees2412/scrapify.git",
+  "git": "git+https://github.com/khrees2412/fs-scrapper.git",
   "author": "Christian Ndu",
   "license": "MIT"
 }

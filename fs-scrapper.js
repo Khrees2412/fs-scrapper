@@ -7,7 +7,7 @@ const directory = args[0];
 const createdDirectory = args[1];
 const fileName = args[2];
 
-class fileEmitter extends EventEmitter {
+class Scrapper extends EventEmitter {
   constructor(directory) {
     super();
     this.folderPath = `${directory}`;
@@ -38,10 +38,10 @@ class fileEmitter extends EventEmitter {
           console.log("file written to...");
         }
       );
-    }, 10);
+    }, 50);
   }
 }
-const logger = new fileEmitter(directory);
+const logger = new Scrapper(directory);
 logger.read();
 
 logger.on("write to file", () => {
