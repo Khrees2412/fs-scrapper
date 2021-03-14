@@ -1,6 +1,6 @@
 {
   "name": "fs-scrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A program that scrapes files in a given directory and writes it to a new single file of your choice",
   "main": "fs-scrapper.js",
   "scripts": {
